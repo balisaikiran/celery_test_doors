@@ -55,3 +55,4 @@
   ```bash
   sudo journalctl -f -u celery-worker
   ```# celery_test_doors
+# celery_test_doors

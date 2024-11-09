@@ -13,6 +13,8 @@ services:
     environment:
       - REDIS_URL=redis://redis:6379
     command: celery -A celery_app worker --loglevel=info
+    volumes:
+      - ./:/app/project_files
 
   celery_beat:
     build: .

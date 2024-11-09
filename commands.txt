@@ -1,0 +1,7 @@
+docker compose down && docker compose up --build
+
+Now let's test the task. Open a new terminal and run:
+docker compose exec celery_worker python test_task.py
+
+To check the logs in real-time:
+docker compose logs -f celery_worker
